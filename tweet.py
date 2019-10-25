@@ -8,7 +8,7 @@ from datetime import timedelta
 
 tl = Timeloop()
 
-@tl.job(interval=timedelta(hours==12))
+@tl.job(interval=timedelta(hours=12))
 def make_tweet():
     """ this function create a tweet every 12 hours """
     api = create_api()
